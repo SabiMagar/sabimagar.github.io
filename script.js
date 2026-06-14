@@ -1,7 +1,6 @@
-const menu = document.querySelector("#menu");
-const nav = document.querySelector(".links");
+let menu = document.getElementById("menu");
+let links = document.querySelector(".links");
 
-menu.onclick = () => {
-    menu.classList.toggle("bx-x");
-    nav.classList.toggle("active");
-};
+menu.addEventListener("click", () => {
+    links.classList.toggle("active");
+});
