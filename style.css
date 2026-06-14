@@ -360,12 +360,11 @@ footer{
     .links.active{
     display: flex;
     }
-
     #Home h1{
-    font-size:2.5rem;
+    font-size: 1.5rem;
     }
     #Home h3{
-    font-size:1.2rem;
+    font-size: 0.9rem;
     }
     #Home img{
     width: 220px;
@@ -374,13 +373,13 @@ footer{
     object-fit: cover;
     }
     #About .Skills{
-        gap: 3em;
+        gap: 2em;
     }
     #Projects .header{
-        font-size: 3em;
+        font-size: 2em;
     }
     #Contact .header{
-        font-size: 3em;
+        font-size: 2em;
     }
     #Contact .input-box span{
         font-size: 1.2em;
