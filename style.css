@@ -28,14 +28,13 @@ nav{
     position: fixed;
     height: 80px;
     width: 100%;
-    padding: 2em 10%;
+    padding: 0 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(31, 30, 30, 0.8);
     backdrop-filter: blur(20px);
     z-index: 1000;
-
 }
 ul{
     display: flex;
@@ -103,12 +102,12 @@ section {
     color: white;
 }
 #Home img{
-    max-width: 80vw;
+    max-width: 70vw;
     border-radius: 80%;
     margin-top: 80px;
     object-fit: cover;
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
 }
 .info-box{
     display: flex;
@@ -268,11 +267,7 @@ form .input-box{
 form input{
     width: 100%;
     max-width: 400px;
-    font-size: 1em;
-    padding: 1em 5em;
-    border-radius: 0.5em;
-    border: none;
-    outline: none;
+    padding: 1em;
 }
 form input:focus{
     background: rgb(229,229,229);
@@ -330,6 +325,12 @@ footer{
 }
 
 @media(max-width:968px){
+    nav {
+    gap: 1rem;
+    }
+    .logo{
+    z-index: 1100;
+    }
     section{
         padding: 8em 15%;
     }
@@ -338,21 +339,39 @@ footer{
     }
     #menu{
         display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+        z-index: 1100;
     }
     .links{
     display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
     }
     .links.active{
     display: flex;
     }
+    .links.active{
+    display: flex;
+    }
+
     #Home h1{
-        font-size: 4em;
+    font-size:2.5rem;
     }
     #Home h3{
-        font-size: 2em;
+    font-size:1.2rem;
     }
     #Home img{
-        width: 24vw;
+    width: 220px;
+    height: 220px;
+    max-width: 70vw;
+    object-fit: cover;
     }
     #About .Skills{
         gap: 3em;
@@ -376,5 +395,25 @@ footer{
     }
 }
 @media(max-width:768px){
+    .Skills ul{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+    .box{
+        padding: 1.5em;
+    }
+     section{
+        padding: 6em 8%;
+    }
+    footer{
+        padding: 3em 8%;
+    }
 
+    .col-box{
+        flex-wrap: wrap;
+    }
+
+    .col-box span{
+        font-size: 1rem;
+    }
 }
